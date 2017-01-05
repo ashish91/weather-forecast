@@ -1,4 +1,6 @@
 <%= line_chart @data, min: 0, max: 24, ytitle: "Hour of day", xtitle: "Temperature"  %>
 <br/>
-Max Temperature: <%= @max_temp %>, Time of day: <%= @time_for_max_temp.strftime("%H:%M") %> hrs
-Min Temperature: <%= @min_temp %>, Time of day: <%= @time_for_min_temp.strftime("%H:%M") %> hrs
+<div class="max_min">
+  Max Temperature: <%= @max_temp %>, Time of day: <%= @time_for_max_temp.strftime("%H:%M") %> hrs
+  Min Temperature: <%= @min_temp %>, Time of day: <%= @time_for_min_temp.strftime("%H:%M") %> hrs
+</div>
