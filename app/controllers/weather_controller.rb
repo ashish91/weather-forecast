@@ -17,7 +17,7 @@ class WeatherController < ApplicationController
 
   private
   def weather_api
-    @api ||= External::Api::Weather.new
+    @api ||= ::External::Api::Weather.new
   end
 
   def set_min_max_temp(weather)
